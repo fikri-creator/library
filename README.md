@@ -36,8 +36,8 @@ python3 -m http.server 8000
 
 ## Files
 
-| File          | Purpose                                |
-| ------------- | -------------------------------------- |
-| `index.html`  | Markup, `<dialog>` modal form          |
-| `styles.css`  | Card grid, badges, modal styling       |
-| `script.js`   | All JS (data, display, form, storage)  |
+| File         | Purpose                               |
+| ------------ | ------------------------------------- |
+| `index.html` | Markup, `<dialog>` modal form         |
+| `styles.css` | Card grid, badges, modal styling      |
+| `script.js`  | All JS (data, display, form, storage) |
