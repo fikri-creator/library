@@ -142,6 +142,20 @@ main {
   display: none;
 }
 
+.stats {
+  text-align: center;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+}
+
+.form-error {
+  margin: 0.5rem 0 0;
+  color: var(--danger);
+  font-size: 0.85rem;
+  min-height: 1.1em;
+}
+
 .primary-btn {
   background: var(--accent);
   color: #fff;

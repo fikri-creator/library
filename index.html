@@ -13,6 +13,7 @@
   </header>
 
   <main>
+    <p id="stats" class="stats" aria-live="polite"></p>
     <div id="library" class="library-grid" aria-live="polite"></div>
     <p id="empty-message" class="empty-message">Your library is empty. Click "New Book" to add one.</p>
   </main>
@@ -35,6 +36,8 @@
         <input type="checkbox" id="read" name="read" />
         <span>I've read this book</span>
       </label>
+
+      <p id="form-error" class="form-error" role="alert"></p>
 
       <div class="form-actions">
         <button type="button" id="cancel-btn" class="secondary-btn">Cancel</button>
