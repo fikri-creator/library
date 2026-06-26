@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>📚 My Library</h1>
+    <button type="button" id="new-book-btn" class="primary-btn">+ New Book</button>
+  </header>
+
+  <main>
+    <div id="library" class="library-grid" aria-live="polite"></div>
+    <p id="empty-message" class="empty-message">Your library is empty. Click "New Book" to add one.</p>
+  </main>
+
+  <!-- Modal dialog for adding a new book -->
+  <dialog id="book-dialog" class="book-dialog">
+    <form id="book-form" method="dialog" class="book-form">
+      <h2>Add a new book</h2>
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required maxlength="200" />
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required maxlength="200" />
+
+      <label for="pages">Number of pages</label>
+      <input type="number" id="pages" name="pages" required min="1" max="100000" />
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="read" name="read" />
+        <span>I've read this book</span>
+      </label>
+
+      <div class="form-actions">
+        <button type="button" id="cancel-btn" class="secondary-btn">Cancel</button>
+        <button type="submit" id="submit-btn" class="primary-btn">Add Book</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
